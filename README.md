@@ -1,8 +1,6 @@
 # AdaREF
 
-**AdaREF: Adaptive reference-editing fusion for cross-device wearable heart-rate estimation**
-
-Core implementation of REF and EDTA for peer review.
+Core implementation of **AdaREF: Adaptive reference-editing fusion for cross-device wearable heart-rate estimation**
 
 ## Structure
 
