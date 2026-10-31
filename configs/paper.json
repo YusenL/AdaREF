@@ -1,0 +1,29 @@
+{
+  "kind": "refmask_pos",
+  "seeds": [
+    11,
+    23,
+    37,
+    51,
+    73
+  ],
+  "training": {
+    "learning_rate": 0.00025,
+    "batch_size": 128,
+    "max_epochs": 200,
+    "patience": 50,
+    "shuffle_buffer": 5000
+  },
+  "adaptation": {
+    "steps": 100,
+    "kl_weight": 3.0,
+    "learning_rate": 0.001,
+    "block_length": 64,
+    "max_blocks": 8,
+    "seed": 0,
+    "objective": "temporal"
+  },
+  "inference": {
+    "batch_size": 1024
+  }
+}
