@@ -8,8 +8,8 @@ import numpy as np
 import torch
 from torch import nn
 
-from adaref_review.adaptation import adapt, chunks
-from adaref_review.model import (
+from adaptation import adapt, chunks
+from model import (
     AdaREF, BinnedRegressionLoss, ReferenceEditor, bpm_bins, forward_prior,
 )
 

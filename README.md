@@ -4,7 +4,9 @@ Core implementation of **AdaREF: Adaptive reference-editing fusion for cross-dev
 
 ## Structure
 
-- `adaref_review/`: model, adaptation, and synthetic demo.
+- `model.py`: AdaREF model, source loss, and HR dynamics.
+- `adaptation.py`: EDTA updates.
+- `main.py`: synthetic demo.
 - `configs/paper.json`: paper settings.
 - `tests/`: core checks.
 
@@ -13,13 +15,13 @@ Core implementation of **AdaREF: Adaptive reference-editing fusion for cross-dev
 Python 3.9–3.11.
 
 ```bash
-pip install -e .
+pip install -r requirements.txt
 ```
 
 ## Run
 
 ```bash
-python -m adaref_review --config configs/paper.json
+python main.py --config configs/paper.json
 python -m unittest discover -s tests -v
 ```
 

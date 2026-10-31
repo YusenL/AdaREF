@@ -9,8 +9,8 @@ from types import SimpleNamespace
 import numpy as np
 import torch
 
-from .adaptation import adapt, chunks
-from .model import AdaREF, BinnedRegressionLoss, fit_transition, forward_prior
+from adaptation import adapt, chunks
+from model import AdaREF, BinnedRegressionLoss, fit_transition, forward_prior
 
 
 def run(*, config=None, steps=2, windows=96, seed=0, device="cpu"):
@@ -100,3 +100,7 @@ def main(argv=None):
     result = run(config=args.config, steps=args.steps, windows=args.windows,
                  seed=args.seed, device=args.device)
     print(json.dumps(result, indent=2, allow_nan=False))
+
+
+if __name__ == "__main__":
+    main()
