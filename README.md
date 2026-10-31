@@ -27,4 +27,4 @@ python -m unittest discover -s tests -v
 
 The demo uses synthetic inputs and random weights and runs two EDTA steps. Add `--steps 100` to use the paper's update budget. It checks the algorithms rather than reproducing benchmark results.
 
-BeliefPPG attribution and license: [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
+BeliefPPG attribution and license are included in [model.py](model.py).
